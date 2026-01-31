@@ -1,7 +1,17 @@
 [gd_resource type="Resource" script_class="AnimalInfo" format=3 uid="uid://cdvb2xmgvgr6p"]
 
 [ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="1_b3t57"]
+[ext_resource type="Texture2D" uid="uid://u0cxekvtrhe8" path="res://art/giraffe.png" id="2_yel1w"]
 
 [resource]
 script = ExtResource("1_b3t57")
+name = "Giraffe"
+correct_mask_id = 3
+color_answer = "Green - gotta get those fresh leaves, am I right?"
+possession_answer = "My grandma got me this bangin’ pipe when we were in Rockstone last summer."
+fun_answer = "Doing sick flips on my skateboard."
+intro_dialog = "What’s hanging, dude?"
+correct_dialog = "Radical!"
+incorrect_dialog = "Whatever floats your boat, duderino."
+sprite_texture = ExtResource("2_yel1w")
 metadata/_custom_type_script = "uid://gs6jwbmphuet"

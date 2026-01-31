@@ -1,14 +1,17 @@
 [gd_resource type="Resource" script_class="AnimalInfo" format=3 uid="uid://bsoof0dti76tb"]
 
 [ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="1_nnmlg"]
-[ext_resource type="Texture2D" uid="uid://djthgju0gvm5p" path="res://art/default-animal.webp" id="2_vpwpq"]
+[ext_resource type="Texture2D" uid="uid://btpls8xsvb5cq" path="res://art/bear.png" id="2_nnmlg"]
 
 [resource]
 script = ExtResource("1_nnmlg")
-name = "bear"
+name = "Bear"
 correct_mask_id = 1
 color_answer = "Purple, like the sky when it’s nice and crisp out."
 possession_answer = "A pristine first edition of the novel *The Shadow Returns!*"
 fun_answer = "Relax by the fire, sip my hot cocoa and read the most recent issue of *Animals Assemble!*"
-sprite_texture = ExtResource("2_vpwpq")
+intro_dialog = "Will this be quick? I hate standing out in the cold."
+correct_dialog = "It looks just like Nightbear’s!"
+incorrect_dialog = "I can make this work."
+sprite_texture = ExtResource("2_nnmlg")
 metadata/_custom_type_script = "uid://gs6jwbmphuet"

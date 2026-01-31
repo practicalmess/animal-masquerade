@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n445mse0uhl6"
-path="res://.godot/imported/pointy-blue.png-1a624aeaf5600c843a1184c97888a687.ctex"
+uid="uid://b1ssrk0mgeoo2"
+path="res://.godot/imported/icon_guide.png-19865d1a5793118436fa73fae6551083.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/pointy-blue.png"
-dest_files=["res://.godot/imported/pointy-blue.png-1a624aeaf5600c843a1184c97888a687.ctex"]
+source_file="res://art/icon_guide.png"
+dest_files=["res://.godot/imported/icon_guide.png-19865d1a5793118436fa73fae6551083.ctex"]
 
 [params]
 
