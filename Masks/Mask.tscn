@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://3hlmsvwuucwt"]
+
+[ext_resource type="Script" uid="uid://yyxaehwkrb3l" path="res://Masks/Mask.gd" id="1_esv4n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jhln1"]
+size = Vector2(150, 70)
+
+[node name="Mask" type="Node2D" unique_id=25662382]
+script = ExtResource("1_esv4n")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=878590045]
+input_pickable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1059694026]
+shape = SubResource("RectangleShape2D_jhln1")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1649786363]
+
+[connection signal="mouse_entered" from="CharacterBody2D" to="." method="_on_character_body_2d_mouse_entered"]
+[connection signal="mouse_exited" from="CharacterBody2D" to="." method="_on_character_body_2d_mouse_exited"]
