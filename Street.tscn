@@ -6,6 +6,9 @@
 [ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="3_dx7jg"]
 [ext_resource type="Resource" uid="uid://bsoof0dti76tb" path="res://Data/Animals/bear.tres" id="4_v1iyc"]
 [ext_resource type="PackedScene" uid="uid://c1khf5hw82xvq" path="res://Masks/MaskBar.tscn" id="6_v1iyc"]
+[ext_resource type="Script" uid="uid://cjll0tcl1dinq" path="res://Masks/MaskInfo.gd" id="7_ta7yg"]
+[ext_resource type="Resource" uid="uid://da2hl5ty1rn32" path="res://Data/Masks/pointy_brown_large.tres" id="8_anwfe"]
+[ext_resource type="Resource" uid="uid://3at16rhtdglr" path="res://Data/Masks/smooth_blue_small.tres" id="9_wne8h"]
 
 [node name="Street" type="Node2D" unique_id=31064856]
 editor_description = "The main gameplay scene where animals will approach you"
@@ -30,3 +33,4 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="MaskBar" parent="." unique_id=1961531635 instance=ExtResource("6_v1iyc")]
+mask_properties_list = Array[ExtResource("7_ta7yg")]([ExtResource("8_anwfe"), ExtResource("9_wne8h")])

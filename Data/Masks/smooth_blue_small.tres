@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MaskInfo" format=3 uid="uid://3at16rhtdglr"]
+
+[ext_resource type="Script" uid="uid://cjll0tcl1dinq" path="res://Masks/MaskInfo.gd" id="1_6y7ef"]
+[ext_resource type="Texture2D" uid="uid://n445mse0uhl6" path="res://art/pointy-blue.png" id="2_f2rve"]
+
+[resource]
+script = ExtResource("1_6y7ef")
+shape = "smooth"
+size = "small"
+color = "blue"
+sprite_texture = ExtResource("2_f2rve")
+id = 1
+metadata/_custom_type_script = "uid://cjll0tcl1dinq"

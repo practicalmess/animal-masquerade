@@ -3,6 +3,7 @@ extends Node2D
 @export var info: MaskInfo
 
 var draggable = false
+var is_dragging = false
 var offset: Vector2
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -17,10 +18,15 @@ func _process(delta: float) -> void:
 	if draggable:
 		if Input.is_action_just_pressed("click"):
 			offset = get_global_mouse_position() - global_position
+			is_dragging = true
+			
 		if Input.is_action_pressed("click"):
 			global_position = get_global_mouse_position() - offset
+		
+		if Input.is_action_just_released("click"):
+			is_dragging = false
 
-
+# On hover over mask
 func _on_character_body_2d_mouse_entered() -> void:
 	scale = Vector2(1.05, 1.05)
 	draggable = true

@@ -6,3 +6,4 @@ class_name MaskInfo
 @export var size: String
 @export var color: String
 @export var sprite_texture: Texture2D
+@export var id: int

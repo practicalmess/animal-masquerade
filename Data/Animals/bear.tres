@@ -5,7 +5,9 @@
 
 [resource]
 script = ExtResource("1_nnmlg")
-species = "bear"
-color = "brown"
+name = "bear"
+color_pref = "blue"
+size_pref = "small"
+shape_pref = "round"
 sprite_texture = ExtResource("2_vpwpq")
 metadata/_custom_type_script = "uid://gs6jwbmphuet"

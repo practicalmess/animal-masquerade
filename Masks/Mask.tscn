@@ -6,6 +6,7 @@
 size = Vector2(150, 70)
 
 [node name="Mask" type="Node2D" unique_id=25662382]
+z_index = 1
 script = ExtResource("1_esv4n")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=878590045]

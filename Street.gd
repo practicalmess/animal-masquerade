@@ -14,7 +14,7 @@ func spawn_next_animal() -> void:
 	
 	var current_animal = animal_base.instantiate()
 	add_child(current_animal)
-	current_animal.position = Vector2(866,200)
+	current_animal.position = get_viewport_rect().size / 2
 	var info = animal_info_list[current_animal_index]
 	current_animal.setup(info)
 	current_animal_index += 1
