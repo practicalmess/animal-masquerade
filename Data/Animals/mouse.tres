@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="AnimalInfo" format=3 uid="uid://rarjj30fbnxm"]
+
+[ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="1_bmg7q"]
+
+[resource]
+script = ExtResource("1_bmg7q")
+metadata/_custom_type_script = "uid://gs6jwbmphuet"

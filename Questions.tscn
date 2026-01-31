@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://ddyl243tohvad"]
+
+[ext_resource type="Script" uid="uid://cys47l60ovfgn" path="res://Questions.gd" id="1_eyi1n"]
+
+[node name="Questions" type="Control" unique_id=548772614]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_eyi1n")
