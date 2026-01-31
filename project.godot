@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Animal Masquerade"
-run/main_scene="uid://dx1hwjf71ha6q"
+run/main_scene="uid://bvp5x0mrb4ugg"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 

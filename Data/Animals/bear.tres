@@ -1,9 +1,11 @@
 [gd_resource type="Resource" script_class="AnimalInfo" format=3 uid="uid://bsoof0dti76tb"]
 
-[ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="1_o3wnr"]
+[ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="1_nnmlg"]
+[ext_resource type="Texture2D" uid="uid://djthgju0gvm5p" path="res://art/default-animal.webp" id="2_vpwpq"]
 
 [resource]
-script = ExtResource("1_o3wnr")
+script = ExtResource("1_nnmlg")
 species = "bear"
 color = "brown"
+sprite_texture = ExtResource("2_vpwpq")
 metadata/_custom_type_script = "uid://gs6jwbmphuet"
