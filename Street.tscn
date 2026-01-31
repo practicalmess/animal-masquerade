@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://bvp5x0mrb4ugg"]
+
+[node name="Street" type="Node2D" unique_id=31064856]
+editor_description = "The main gameplay scene where animals will approach you"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="AnimalInfo" format=3 uid="uid://bsoof0dti76tb"]
+
+[ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="1_o3wnr"]
+
+[resource]
+script = ExtResource("1_o3wnr")
+species = "bear"
+color = "brown"
+metadata/_custom_type_script = "uid://gs6jwbmphuet"
