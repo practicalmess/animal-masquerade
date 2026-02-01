@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://3bs0wuxwjd8s"]
 
 [ext_resource type="Script" uid="uid://bt58l5333iei5" path="res://UI/Confirm_Choice.gd" id="1_hg5hu"]
-[ext_resource type="Texture2D" uid="uid://f1ecgck6rj2l" path="res://art/ui_box.png" id="2_73ame"]
+[ext_resource type="Texture2D" uid="uid://dgm47mrdr2v7a" path="res://art/ui_box_cancel.png" id="2_msfmv"]
+[ext_resource type="Texture2D" uid="uid://db55co8ui1k6d" path="res://art/ui_box_cancel_hover.png" id="3_i7o73"]
+[ext_resource type="Texture2D" uid="uid://phq034sk6p3q" path="res://art/ui_box_confirm.png" id="4_4quk5"]
+[ext_resource type="Texture2D" uid="uid://d1dvssos7ofky" path="res://art/ui_box_confirm_hover.png" id="5_0h4j4"]
 
 [node name="ConfirmChoice" type="HBoxContainer" unique_id=1040778977]
 z_index = 2
@@ -19,8 +22,10 @@ script = ExtResource("1_hg5hu")
 
 [node name="Reset" type="TextureButton" parent="." unique_id=130553900 groups=["confirm_buttons"]]
 layout_mode = 2
-texture_normal = ExtResource("2_73ame")
+texture_normal = ExtResource("2_msfmv")
+texture_hover = ExtResource("3_i7o73")
 
 [node name="Confirm" type="TextureButton" parent="." unique_id=136370861 groups=["confirm_buttons"]]
 layout_mode = 2
-texture_normal = ExtResource("2_73ame")
+texture_normal = ExtResource("4_4quk5")
+texture_hover = ExtResource("5_0h4j4")

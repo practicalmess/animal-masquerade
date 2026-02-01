@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="AnimalInfo" format=3 uid="uid://cdvb2xmgvgr6p"]
 
 [ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="1_b3t57"]
-[ext_resource type="Texture2D" uid="uid://u0cxekvtrhe8" path="res://art/giraffe.png" id="2_yel1w"]
+[ext_resource type="Texture2D" uid="uid://b447yvjdntwd7" path="res://art/giraffe_long.png" id="2_yel1w"]
 
 [resource]
 script = ExtResource("1_b3t57")
