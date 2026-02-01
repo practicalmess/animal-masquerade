@@ -9,13 +9,24 @@ func _ready() -> void:
 			button.pressed.connect(_on_button_pressed.bind(button.name))
 
 func _on_button_pressed(button_name) -> void:
-	signalbus.emit_signal("_reset_masks")
 	global.is_mask_selected = false
-	global.questions_asked = 0
+	var current_animal = global.current_animal
 	if button_name == "Confirm":
 		var selection_id = global.selected_mask.info.id
-		global.current_animal.check_mask(selection_id)
-
+		var correct = current_animal.check_mask(selection_id)
+		if correct:
+			global.current_dialogue = global.dialogue[current_animal.info.name]["correct"]
+		else:
+			global.current_dialogue = global.dialogue[current_animal.info.name]["incorrect"]
+		await get_tree().create_timer(2.0).timeout
+		current_animal.dismiss()
+		await get_tree().create_timer(2.0).timeout
+		signalbus.emit_signal("_reset_mask_bar")
+		global.questions_asked = 0
+		global.selected_mask = null
+	elif button_name == "Reset":
+		signalbus.emit_signal("_reset_animal_mask")
+		signalbus.emit_signal("_reset_mask_bar")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

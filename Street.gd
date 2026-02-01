@@ -9,7 +9,7 @@ var current_animal_index: int = 0
 func _ready() -> void:
 	spawn_next_animal()
 	reset_masks()
-	signalbus.connect("_reset_masks", reset_masks)
+	signalbus.connect("_reset_mask_bar", reset_masks)
 
 func reset_masks() -> void:
 	var children = get_children()

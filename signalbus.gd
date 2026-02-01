@@ -1,6 +1,7 @@
 extends Node
 
-signal _reset_masks()
+signal _reset_mask_bar()
+signal _reset_animal_mask()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
