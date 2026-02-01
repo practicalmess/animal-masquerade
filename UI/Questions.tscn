@@ -1,7 +1,15 @@
 [gd_scene format=3 uid="uid://ddyl243tohvad"]
 
 [ext_resource type="Script" uid="uid://cys47l60ovfgn" path="res://UI/Questions.gd" id="1_eyi1n"]
-[ext_resource type="Texture2D" uid="uid://f1ecgck6rj2l" path="res://art/ui_box.png" id="2_vujej"]
+[ext_resource type="Texture2D" uid="uid://dwfl43hhdi5dh" path="res://art/ui_box_color.png" id="2_himf3"]
+[ext_resource type="Texture2D" uid="uid://cmas2j3g5cot1" path="res://art/ui_box_color_hover.png" id="3_lfkui"]
+[ext_resource type="Texture2D" uid="uid://cxaca5ywhxhby" path="res://art/ui_box_color_disabled.png" id="4_2pn68"]
+[ext_resource type="Texture2D" uid="uid://b06s4a0r42v66" path="res://art/ui_box_possession.png" id="5_7ovrw"]
+[ext_resource type="Texture2D" uid="uid://yjt3nbdv5xs0" path="res://art/ui_box_possession_hover.png" id="6_p21ix"]
+[ext_resource type="Texture2D" uid="uid://cmekus8rbimge" path="res://art/ui_box_possession_disabled.png" id="7_cfpnc"]
+[ext_resource type="Texture2D" uid="uid://iwp4nb8523pj" path="res://art/ui_box_fun.png" id="8_3jpy0"]
+[ext_resource type="Texture2D" uid="uid://ogr78mwj4lb5" path="res://art/ui_box_fun_hover.png" id="9_6aore"]
+[ext_resource type="Texture2D" uid="uid://q3uxq3trl68g" path="res://art/ui_box_fun_disabled.png" id="10_jranw"]
 
 [node name="Questions" type="VBoxContainer" unique_id=1719548244]
 offset_right = 192.0
@@ -10,12 +18,18 @@ script = ExtResource("1_eyi1n")
 
 [node name="Color" type="TextureButton" parent="." unique_id=2051137399]
 layout_mode = 2
-texture_normal = ExtResource("2_vujej")
+texture_normal = ExtResource("2_himf3")
+texture_hover = ExtResource("3_lfkui")
+texture_disabled = ExtResource("4_2pn68")
 
 [node name="Possession" type="TextureButton" parent="." unique_id=391698264]
 layout_mode = 2
-texture_normal = ExtResource("2_vujej")
+texture_normal = ExtResource("5_7ovrw")
+texture_hover = ExtResource("6_p21ix")
+texture_disabled = ExtResource("7_cfpnc")
 
 [node name="Fun" type="TextureButton" parent="." unique_id=122693058]
 layout_mode = 2
-texture_normal = ExtResource("2_vujej")
+texture_normal = ExtResource("8_3jpy0")
+texture_hover = ExtResource("9_6aore")
+texture_disabled = ExtResource("10_jranw")
