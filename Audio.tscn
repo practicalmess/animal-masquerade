@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://7lnl3e6qf1kl"]
+[gd_scene format=3 uid="uid://dmq5rhywe30a6"]
 
-[ext_resource type="Script" uid="uid://dapvp1g8x4ssw" path="res://audio.gd" id="1_c7q73"]
+[ext_resource type="Script" path="res://audio.gd" id="1_c7q73"]
 [ext_resource type="AudioStream" uid="uid://df2d277bkvok2" path="res://audio/BETA_Masquerade_Club_01_BPM120.wav" id="1_ml5b6"]
 [ext_resource type="AudioStream" uid="uid://cyymtt3xj7d6m" path="res://audio/Question_Select.wav" id="3_cd7xo"]
 [ext_resource type="AudioStream" uid="uid://b8s163g3xtyx8" path="res://audio/Animal_Speak_01.wav" id="4_4wya5"]
