@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dx1hwjf71ha6q"]
 
 [ext_resource type="PackedScene" uid="uid://bvp5x0mrb4ugg" path="res://Street.tscn" id="1_uu6xs"]
+[ext_resource type="Script" uid="uid://jmk6twfboggj" path="res://main.gd" id="1_wkp8b"]
 [ext_resource type="Script" uid="uid://bjepg6gck5wv0" path="res://Controls.gd" id="2_cm0pq"]
 [ext_resource type="PackedScene" uid="uid://ddyl243tohvad" path="res://UI/Questions.tscn" id="2_r0du0"]
 [ext_resource type="PackedScene" uid="uid://3bs0wuxwjd8s" path="res://UI/ConfirmChoice.tscn" id="3_r0du0"]
@@ -11,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://c3on6pt0fholh" path="res://Win.tscn" id="9_wkp8b"]
 
 [node name="Main" type="Node" unique_id=1109782213]
+script = ExtResource("1_wkp8b")
 
 [node name="Street" parent="." unique_id=31064856 instance=ExtResource("1_uu6xs")]
 

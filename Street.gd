@@ -4,7 +4,7 @@ extends Node2D
 @export var animal_info_list: Array[AnimalInfo]
 @export var mask_bar_base: PackedScene
 
-var current_animal_index: int = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	spawn_next_animal()
@@ -22,7 +22,7 @@ func reset_masks() -> void:
 	add_child(fresh_mask_bar)
 		
 func spawn_next_animal() -> void:
-	if current_animal_index >= animal_info_list.size():
+	if global.current_animal_index >= animal_info_list.size():
 		if global.score == 5:
 			global.game_state = 'win'
 		else:
@@ -33,12 +33,12 @@ func spawn_next_animal() -> void:
 	var current_animal = animal_base.instantiate()
 	add_child(current_animal)
 	current_animal.position = get_viewport_rect().size / 2
-	var info = animal_info_list[current_animal_index]
+	var info = animal_info_list[global.current_animal_index]
 	current_animal.setup(info)
 	global.show_dialogue_box = true
 	signalbus.emit_signal("_play_dialogue")
 	global.current_dialogue = info.intro_dialog
-	current_animal_index += 1
+	global.current_animal_index += 1
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

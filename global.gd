@@ -2,8 +2,9 @@ extends Node
 
 var score: int = 0
 var questions_asked: int = 0
-var is_mask_selected: bool
-var current_animal: Node
+var is_mask_selected: bool = false
+var current_animal: Node = null
+var current_animal_index: int = 0
 var selected_mask: Node = null
 var current_dialogue: String = ''
 var show_dialogue_box: bool = false

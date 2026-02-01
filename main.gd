@@ -1,15 +1,12 @@
 extends Node
 
-signal _reset_mask_bar()
-signal _reset_animal_mask()
-signal _next_animal()
-signal _play_click()
-signal _play_dialogue()
-signal _reset_game()
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	signalbus.connect("_reset_game", reset_game)
 
+func reset_game() -> void:
+	get_tree().reload_current_scene()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
