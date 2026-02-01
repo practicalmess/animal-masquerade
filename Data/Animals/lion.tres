@@ -1,7 +1,17 @@
 [gd_resource type="Resource" script_class="AnimalInfo" format=3 uid="uid://b7sfeteiy7kmj"]
 
 [ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="1_2a22o"]
+[ext_resource type="Texture2D" uid="uid://cqo71d5iubj2u" path="res://art/lion.png" id="2_4futj"]
 
 [resource]
 script = ExtResource("1_2a22o")
+name = "Lion"
+correct_mask_id = 4
+color_answer = "I am engrossed by the fiery glow of the chili."
+possession_answer = "I could not survive without my chef knives."
+fun_answer = "My work is my passion, mi amigo - I am happiest filling bellies, stranger or friend."
+intro_dialog = "And what course for me, compadre?"
+correct_dialog = "Delicioso! Mwah!"
+incorrect_dialog = "You are the boss, amigo."
+sprite_texture = ExtResource("2_4futj")
 metadata/_custom_type_script = "uid://gs6jwbmphuet"

@@ -1,7 +1,17 @@
 [gd_resource type="Resource" script_class="AnimalInfo" format=3 uid="uid://rarjj30fbnxm"]
 
 [ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="1_bmg7q"]
+[ext_resource type="Texture2D" uid="uid://b2vdfim8xt363" path="res://art/mouse.png" id="2_q3hrc"]
 
 [resource]
 script = ExtResource("1_bmg7q")
+name = "Mouse"
+correct_mask_id = 2
+color_answer = "The royal color, of course."
+possession_answer = "My $5,000 Leonis Vuitton handbag."
+fun_answer = "Go shopping with my gals at Needless Markup."
+intro_dialog = "Don’t waste my time, pleb. I need to refresh my lipstick STAT."
+correct_dialog = "Ooh, the glam!"
+incorrect_dialog = "Ew."
+sprite_texture = ExtResource("2_q3hrc")
 metadata/_custom_type_script = "uid://gs6jwbmphuet"

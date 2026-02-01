@@ -1,7 +1,15 @@
 [gd_resource type="Resource" script_class="AnimalInfo" format=3 uid="uid://5cke4xp7gl7"]
 
 [ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="1_dwsey"]
+[ext_resource type="Texture2D" uid="uid://pwe6vxdweokq" path="res://art/snake.png" id="2_nnl2c"]
 
 [resource]
 script = ExtResource("1_dwsey")
+correct_mask_id = 5
+color_answer = "Sssunsssssset. What, you want me to elaborate?"
+possession_answer = "My Ssssamsssssung. Gotta check on my bearcoin hourly."
+fun_answer = "Fun? Life isssssn’t fun, pal. I chassse paper. Money. Gotta get with the timessssss or get left behind."
+intro_dialog = "Hurry up, I gotta check my ssstocksssssss."
+correct_dialog = "Nice. Sssssleek. It workssss."
+sprite_texture = ExtResource("2_nnl2c")
 metadata/_custom_type_script = "uid://gs6jwbmphuet"
