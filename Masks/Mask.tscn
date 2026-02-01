@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://3hlmsvwuucwt"]
 
 [ext_resource type="Script" uid="uid://yyxaehwkrb3l" path="res://Masks/Mask.gd" id="1_esv4n"]
+[ext_resource type="AudioStream" uid="uid://bw1yvp0rnfiqb" path="res://audio/Mask_Pickup.wav" id="2_gncel"]
+[ext_resource type="AudioStream" uid="uid://ombjw8mdybtj" path="res://audio/Mask_Place.wav" id="3_q24kx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jhln1"]
 size = Vector2(150, 70)
@@ -16,6 +18,13 @@ input_pickable = true
 shape = SubResource("RectangleShape2D_jhln1")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1649786363]
+
+[node name="Pickup" type="AudioStreamPlayer" parent="." unique_id=436665239]
+stream = ExtResource("2_gncel")
+volume_db = 10.582
+
+[node name="Place" type="AudioStreamPlayer" parent="." unique_id=2122684147]
+stream = ExtResource("3_q24kx")
 
 [connection signal="mouse_entered" from="CharacterBody2D" to="." method="_on_character_body_2d_mouse_entered"]
 [connection signal="mouse_exited" from="CharacterBody2D" to="." method="_on_character_body_2d_mouse_exited"]

@@ -39,6 +39,7 @@ func show_answer(question: String) -> void:
 			global.current_dialogue = info.possession_answer
 		"Fun":
 			global.current_dialogue = info.fun_answer
+	signalbus.emit_signal("_play_dialogue")
 
 func check_mask(id: int) -> bool:
 	if (id == info.correct_mask_id):

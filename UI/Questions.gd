@@ -2,11 +2,15 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for child in get_children():
-		child.pressed.connect(_on_button_pressed.bind(child.name))
+
+	var all_buttons = find_children("*", "BaseButton", true)
+	
+	for button in all_buttons:
+		button.pressed.connect(_on_button_pressed.bind(button.name))
 
 func _on_button_pressed(button_name: String) -> void:
 	print(global.questions_asked)
+	signalbus.emit_signal("_play_click")
 	global.show_dialogue_box = true
 	global.questions_asked += 1
 	global.current_animal.show_answer(button_name)

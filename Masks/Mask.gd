@@ -20,6 +20,7 @@ func setup(data: MaskInfo) -> void:
 func _process(delta: float) -> void:
 	if draggable && !global.is_mask_selected:
 		if Input.is_action_just_pressed("click"):
+			$Pickup.play()
 			offset = get_global_mouse_position() - global_position
 			is_dragging = true
 			
@@ -27,6 +28,7 @@ func _process(delta: float) -> void:
 			global_position = get_global_mouse_position() - offset
 		
 		if Input.is_action_just_released("click"):
+			$Place.play()
 			is_dragging = false
 			var dist = global_position.distance_to(global.current_animal.global_position)
 			if dist < 100:
