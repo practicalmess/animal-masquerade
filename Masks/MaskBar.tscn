@@ -8,9 +8,27 @@
 [ext_resource type="Resource" path="res://Data/Masks/lion_mask.tres" id="6_2fasq"]
 [ext_resource type="Resource" path="res://Data/Masks/mouse_mask.tres" id="7_5leiq"]
 [ext_resource type="Resource" path="res://Data/Masks/snake_mask.tres" id="8_lt0k0"]
+[ext_resource type="Texture2D" uid="uid://4cf5ymmanspf" path="res://art/desk.png" id="9_qry2d"]
+[ext_resource type="Texture2D" uid="uid://b1ssrk0mgeoo2" path="res://art/icon_guide.png" id="10_2fasq"]
 
 [node name="MaskBar" type="Node2D" unique_id=1961531635]
-position = Vector2(110, 261)
+position = Vector2(219, 540)
 script = ExtResource("1_x042t")
 mask_base = ExtResource("2_c0e0c")
 mask_properties_list = Array[ExtResource("2_mfvce")]([ExtResource("4_6cdk0"), ExtResource("5_qry2d"), ExtResource("6_2fasq"), ExtResource("7_5leiq"), ExtResource("8_lt0k0")])
+
+[node name="HelpButton" type="TextureButton" parent="." unique_id=1997315360]
+z_index = 2
+offset_left = 835.0
+offset_top = -6.0
+offset_right = 899.0
+offset_bottom = 58.0
+texture_normal = ExtResource("10_2fasq")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1065239725]
+offset_left = -223.0
+offset_top = -91.0
+offset_right = 938.0
+offset_bottom = 108.0
+mouse_filter = 2
+texture = ExtResource("9_qry2d")
