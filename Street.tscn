@@ -1,22 +1,26 @@
 [gd_scene format=3 uid="uid://bvp5x0mrb4ugg"]
 
 [ext_resource type="Script" uid="uid://cufjrp51hxrr7" path="res://Street.gd" id="1_7iaks"]
-[ext_resource type="Texture2D" uid="uid://bf60oaanftq50" path="res://art/bg-street.png" id="1_kpbgp"]
 [ext_resource type="PackedScene" uid="uid://dckq16dlhm8hk" path="res://Animal.tscn" id="2_7iaks"]
 [ext_resource type="Script" uid="uid://gs6jwbmphuet" path="res://AnimalInfo.gd" id="3_dx7jg"]
 [ext_resource type="Resource" uid="uid://bsoof0dti76tb" path="res://Data/Animals/bear.tres" id="4_v1iyc"]
+[ext_resource type="Resource" uid="uid://cdvb2xmgvgr6p" path="res://Data/Animals/giraffe.tres" id="5_anwfe"]
 [ext_resource type="PackedScene" uid="uid://c1khf5hw82xvq" path="res://Masks/MaskBar.tscn" id="6_v1iyc"]
+[ext_resource type="Resource" uid="uid://b7sfeteiy7kmj" path="res://Data/Animals/lion.tres" id="6_wne8h"]
+[ext_resource type="Resource" uid="uid://rarjj30fbnxm" path="res://Data/Animals/mouse.tres" id="7_eyqi5"]
+[ext_resource type="Resource" uid="uid://5cke4xp7gl7" path="res://Data/Animals/snake.tres" id="8_tcpt8"]
+[ext_resource type="Texture2D" uid="uid://bry4axysgd8kr" path="res://art/bg.png" id="10_anwfe"]
 
 [node name="Street" type="Node2D" unique_id=31064856]
 editor_description = "The main gameplay scene where animals will approach you"
 script = ExtResource("1_7iaks")
 animal_base = ExtResource("2_7iaks")
-animal_info_list = Array[ExtResource("3_dx7jg")]([ExtResource("4_v1iyc")])
+animal_info_list = Array[ExtResource("3_dx7jg")]([ExtResource("4_v1iyc"), ExtResource("5_anwfe"), ExtResource("6_wne8h"), ExtResource("7_eyqi5"), ExtResource("8_tcpt8")])
 mask_bar_base = ExtResource("6_v1iyc")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=472526760]
 scale = Vector2(1.7937502, 1.7555556)
-texture = ExtResource("1_kpbgp")
+texture = ExtResource("10_anwfe")
 centered = false
 
 [node name="MaskBar" parent="." unique_id=1961531635 instance=ExtResource("6_v1iyc")]

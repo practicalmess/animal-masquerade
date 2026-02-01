@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ddyl243tohvad" path="res://UI/Questions.tscn" id="2_r0du0"]
 [ext_resource type="PackedScene" uid="uid://3bs0wuxwjd8s" path="res://UI/ConfirmChoice.tscn" id="3_r0du0"]
 [ext_resource type="PackedScene" uid="uid://dsduls5fg0p4m" path="res://UI/Dialogue.tscn" id="5_fos0i"]
+[ext_resource type="PackedScene" uid="uid://f3ckv31j6wd0" path="res://Menu.tscn" id="6_3dxm6"]
 
 [node name="Main" type="Node" unique_id=1109782213]
 
@@ -45,3 +46,5 @@ alignment = 1
 
 [node name="Dialogue" parent="Controls" unique_id=1506044529 instance=ExtResource("5_fos0i")]
 position = Vector2(192, -578)
+
+[node name="Menu" parent="." unique_id=1852026686 instance=ExtResource("6_3dxm6")]

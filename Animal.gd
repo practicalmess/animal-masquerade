@@ -18,7 +18,13 @@ func _process(delta: float) -> void:
 	pass
 	
 func show_answer(question: String) -> void:
-	global.current_dialogue = global.dialogue[info.name][question]
+	match question:
+		"Color":
+			global.current_dialogue = info.color_answer
+		"Possession":
+			global.current_dialogue = info.possession_answer
+		"Fun":
+			global.current_dialogue = info.fun_answer
 
 func check_mask(id: int) -> bool:
 	if (id == info.correct_mask_id):
@@ -46,6 +52,7 @@ func reset_mask() -> void:
 	
 func dismiss() -> void:
 	var screenwidth = get_viewport_rect().size.x
+	global.show_dialogue_box = false
 	var tween = create_tween()
 	tween.tween_property(self, "position", Vector2(screenwidth + 200, position.y), 2)
 	tween.finished.connect(queue_free)

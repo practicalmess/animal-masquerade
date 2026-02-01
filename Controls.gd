@@ -15,9 +15,9 @@ func _on_button_pressed(button_name) -> void:
 		var selection_id = global.selected_mask.info.id
 		var correct = current_animal.check_mask(selection_id)
 		if correct:
-			global.current_dialogue = global.dialogue[current_animal.info.name]["correct"]
+			global.current_dialogue = current_animal.info.correct_dialog
 		else:
-			global.current_dialogue = global.dialogue[current_animal.info.name]["incorrect"]
+			global.current_dialogue = current_animal.info.incorrect_dialog
 		await get_tree().create_timer(2.0).timeout
 		current_animal.dismiss()
 		await get_tree().create_timer(2.0).timeout
@@ -32,4 +32,4 @@ func _on_button_pressed(button_name) -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	visible = global.game_state == 'play'

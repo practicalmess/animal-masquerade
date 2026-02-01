@@ -23,15 +23,19 @@ func reset_masks() -> void:
 		
 func spawn_next_animal() -> void:
 	if current_animal_index >= animal_info_list.size():
+		print(current_animal_index)
 		return
 	
+	print(global.questions_asked)
 	var current_animal = animal_base.instantiate()
 	add_child(current_animal)
 	current_animal.position = get_viewport_rect().size / 2
 	var info = animal_info_list[current_animal_index]
 	current_animal.setup(info)
+	global.show_dialogue_box = true
+	global.current_dialogue = info.intro_dialog
 	current_animal_index += 1
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	visible = global.game_state == "play"

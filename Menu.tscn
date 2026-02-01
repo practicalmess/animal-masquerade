@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://f3ckv31j6wd0"]
+
+[ext_resource type="Script" uid="uid://6k05bie1pohw" path="res://Menu.gd" id="1_5yleq"]
+[ext_resource type="Texture2D" uid="uid://f1ecgck6rj2l" path="res://art/ui_box.png" id="2_ylpcl"]
+
+[node name="Menu" type="Node2D" unique_id=1852026686]
+
+[node name="Canvas" type="CanvasLayer" parent="." unique_id=943506223]
+
+[node name="Control" type="Control" parent="Canvas" unique_id=895085304]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5yleq")
+
+[node name="ColorRect" type="ColorRect" parent="Canvas/Control" unique_id=644337147]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Canvas/Control" unique_id=1894514878]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -36.0
+offset_right = 100.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+icon = ExtResource("2_ylpcl")
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="Canvas/Control/Button" to="Canvas/Control" method="_on_button_pressed"]

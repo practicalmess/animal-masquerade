@@ -6,7 +6,6 @@
 [resource]
 script = ExtResource("1_nnmlg")
 name = "Bear"
-correct_mask_id = 1
 color_answer = "Purple, like the sky when it’s nice and crisp out."
 possession_answer = "A pristine first edition of the novel *The Shadow Returns!*"
 fun_answer = "Relax by the fire, sip my hot cocoa and read the most recent issue of *Animals Assemble!*"
