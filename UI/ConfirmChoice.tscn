@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://db55co8ui1k6d" path="res://art/ui_box_cancel_hover.png" id="3_i7o73"]
 [ext_resource type="Texture2D" uid="uid://phq034sk6p3q" path="res://art/ui_box_confirm.png" id="4_4quk5"]
 [ext_resource type="Texture2D" uid="uid://d1dvssos7ofky" path="res://art/ui_box_confirm_hover.png" id="5_0h4j4"]
+[ext_resource type="AudioStream" uid="uid://cyymtt3xj7d6m" path="res://audio/Question_Select.wav" id="6_i7o73"]
 
 [node name="ConfirmChoice" type="HBoxContainer" unique_id=1040778977]
 z_index = 2
@@ -29,3 +30,6 @@ texture_hover = ExtResource("3_i7o73")
 layout_mode = 2
 texture_normal = ExtResource("4_4quk5")
 texture_hover = ExtResource("5_0h4j4")
+
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=791267732]
+stream = ExtResource("6_i7o73")

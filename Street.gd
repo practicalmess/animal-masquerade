@@ -36,6 +36,7 @@ func spawn_next_animal() -> void:
 	var info = animal_info_list[current_animal_index]
 	current_animal.setup(info)
 	global.show_dialogue_box = true
+	signalbus.emit_signal("_play_dialogue")
 	global.current_dialogue = info.intro_dialog
 	current_animal_index += 1
 	

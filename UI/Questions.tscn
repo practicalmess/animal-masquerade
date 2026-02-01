@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://iwp4nb8523pj" path="res://art/ui_box_fun.png" id="8_3jpy0"]
 [ext_resource type="Texture2D" uid="uid://ogr78mwj4lb5" path="res://art/ui_box_fun_hover.png" id="9_6aore"]
 [ext_resource type="Texture2D" uid="uid://q3uxq3trl68g" path="res://art/ui_box_fun_disabled.png" id="10_jranw"]
+[ext_resource type="AudioStream" uid="uid://cyymtt3xj7d6m" path="res://audio/Question_Select.wav" id="11_lfkui"]
 
 [node name="Questions" type="VBoxContainer" unique_id=1719548244]
 offset_right = 192.0
@@ -33,3 +34,6 @@ layout_mode = 2
 texture_normal = ExtResource("8_3jpy0")
 texture_hover = ExtResource("9_6aore")
 texture_disabled = ExtResource("10_jranw")
+
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=1537353991]
+stream = ExtResource("11_lfkui")

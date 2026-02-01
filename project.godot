@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 global="*uid://bim1bj8ecm0km"
 signalbus="*uid://buyufvj0uchbv"
+Audio="*uid://7lnl3e6qf1kl"
 
 [editor]
 

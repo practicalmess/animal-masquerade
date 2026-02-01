@@ -10,10 +10,12 @@ func _ready() -> void:
 
 func _on_button_pressed(button_name) -> void:
 	global.is_mask_selected = false
+	signalbus.emit_signal("_play_click")
 	var current_animal = global.current_animal
 	if button_name == "Confirm":
 		var selection_id = global.selected_mask.info.id
 		var correct = current_animal.check_mask(selection_id)
+		signalbus.emit_signal("_play_dialogue")
 		if correct:
 			global.current_dialogue = current_animal.info.correct_dialog
 		else:
