@@ -14,5 +14,6 @@ func _process(delta: float) -> void:
 func _on_button_pressed() -> void:
 	print('button pressed')
 	signalbus.emit_signal("_play_click")
+	Audio.change_music('Play')
 	global.game_state = 'play'
 	print(global.game_state)
