@@ -2,6 +2,9 @@ extends Node2D
 
 @export var info: AnimalInfo
 
+var idle_interval = 1.2
+var idle_position = false
+
 var selected_mask: Node
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -15,8 +18,19 @@ func setup(data: AnimalInfo) -> void:
 		print("Animal name: ", info.name)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-	
+	idle_interval -= delta
+	if idle_interval <= 0:
+		idle_interval = 1.2
+		var y_pos = position.y
+		var x_pos = position.x
+		if !idle_position:
+			y_pos -= 10
+			position = Vector2(x_pos, y_pos)
+		else:
+			y_pos += 10
+			position = Vector2(x_pos,y_pos)
+		idle_position = !idle_position
+
 func show_answer(question: String) -> void:
 	match question:
 		"Color":

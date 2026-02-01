@@ -10,9 +10,9 @@ script = ExtResource("1_l6hdp")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2095825496]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1458706993]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1064317714]
+visible = false
 modulate = Color(0.8145652, 0.00053001585, 0.81625855, 1)
 shape = SubResource("RectangleShape2D_l6hdp")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

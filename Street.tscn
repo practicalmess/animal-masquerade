@@ -19,9 +19,11 @@ animal_info_list = Array[ExtResource("3_dx7jg")]([ExtResource("4_v1iyc"), ExtRes
 mask_bar_base = ExtResource("6_v1iyc")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=472526760]
+z_index = -1
 scale = Vector2(1.7937502, 1.7555556)
 texture = ExtResource("10_anwfe")
 centered = false
 
 [node name="MaskBar" parent="." unique_id=1961531635 instance=ExtResource("6_v1iyc")]
+z_index = 2
 position = Vector2(165, 562)
