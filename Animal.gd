@@ -17,13 +17,18 @@ func setup(data: AnimalInfo) -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	
+func show_answer(question: String) -> void:
+	global.current_dialogue = global.dialogue[info.name][question]
 
 func check_mask(id: int) -> void:
 	if (id == info.correct_mask_id):
 		global.score += 1
+		print("Current score: ", global.score)
 		
 func catch_mask(mask) -> void:
 	global.is_mask_selected = true
+	global.selected_mask = mask
 	mask.reparent(self)
 	mask.draggable = false
 	mask.is_dragging = false
@@ -36,6 +41,4 @@ func reset_mask() -> void:
 	for child in children:
 		if child is MaskNode:
 			child.queue_free()
-	#remove_child(mask)
-	#mask.queue_free()
 	

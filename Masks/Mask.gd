@@ -34,8 +34,9 @@ func _process(delta: float) -> void:
 			
 # On hover over mask
 func _on_character_body_2d_mouse_entered() -> void:
-	scale = Vector2(1.05, 1.05)
-	draggable = true
+	if !global.is_mask_selected:
+		scale = Vector2(1.05, 1.05)
+		draggable = true
 
 func _on_character_body_2d_mouse_exited() -> void:
 	scale = Vector2(1, 1)

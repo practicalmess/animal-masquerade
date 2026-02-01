@@ -15,7 +15,6 @@ func _ready() -> void:
 		current_mask.position = Vector2(mask_position_x,300)
 		current_mask.setup(mask_properties_list[i])
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

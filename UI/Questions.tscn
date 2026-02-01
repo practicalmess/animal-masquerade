@@ -8,14 +8,14 @@ offset_right = 192.0
 offset_bottom = 132.0
 script = ExtResource("1_eyi1n")
 
-[node name="ColorButton" type="TextureButton" parent="." unique_id=2051137399]
+[node name="Color" type="TextureButton" parent="." unique_id=2051137399]
 layout_mode = 2
 texture_normal = ExtResource("2_vujej")
 
-[node name="PossessionButton" type="TextureButton" parent="." unique_id=391698264]
+[node name="Possession" type="TextureButton" parent="." unique_id=391698264]
 layout_mode = 2
 texture_normal = ExtResource("2_vujej")
 
-[node name="FunButton" type="TextureButton" parent="." unique_id=122693058]
+[node name="Fun" type="TextureButton" parent="." unique_id=122693058]
 layout_mode = 2
 texture_normal = ExtResource("2_vujej")

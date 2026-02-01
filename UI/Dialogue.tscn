@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dsduls5fg0p4m"]
+
+[ext_resource type="Texture2D" uid="uid://c2bd38oadmnsi" path="res://art/ui_dialogue.png" id="1_21og4"]
+[ext_resource type="Script" uid="uid://dgtnerto7ctd0" path="res://UI/Dialogue.gd" id="1_swqkv"]
+
+[node name="Dialogue" type="Node2D" unique_id=1506044529]
+script = ExtResource("1_swqkv")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1821152586]
+offset_right = 369.0
+offset_bottom = 239.0
+texture = ExtResource("1_21og4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect" unique_id=1818529224]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 42.0
+offset_right = 326.0
+offset_bottom = 187.0

@@ -10,9 +10,11 @@ func _ready() -> void:
 
 func _on_button_pressed(button_name) -> void:
 	signalbus.emit_signal("_reset_masks")
+	global.is_mask_selected = false
+	global.questions_asked = 0
 	if button_name == "Confirm":
-		global.is_mask_selected = false
-		global.questions_asked = 0
+		var selection_id = global.selected_mask.info.id
+		global.current_animal.check_mask(selection_id)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

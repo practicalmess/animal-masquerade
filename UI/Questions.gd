@@ -6,8 +6,9 @@ func _ready() -> void:
 		child.pressed.connect(_on_button_pressed.bind(child.name))
 
 func _on_button_pressed(button_name: String) -> void:
-	print(button_name)
+	global.show_dialogue_box = true
 	global.questions_asked += 1
+	global.current_animal.show_answer(button_name)
 	if global.questions_asked >= 2:
 		for child in get_children():
 			if child is BaseButton:
