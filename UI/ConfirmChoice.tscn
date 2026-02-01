@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://3bs0wuxwjd8s"]
+
+[ext_resource type="Script" uid="uid://bt58l5333iei5" path="res://UI/Confirm_Choice.gd" id="1_hg5hu"]
+[ext_resource type="Texture2D" uid="uid://f1ecgck6rj2l" path="res://art/ui_box.png" id="2_73ame"]
+
+[node name="ConfirmChoice" type="HBoxContainer" unique_id=1040778977]
+z_index = 2
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -194.0
+offset_top = -64.0
+offset_right = 194.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_hg5hu")
+
+[node name="Reset" type="TextureButton" parent="." unique_id=130553900 groups=["confirm_buttons"]]
+layout_mode = 2
+texture_normal = ExtResource("2_73ame")
+
+[node name="Confirm" type="TextureButton" parent="." unique_id=136370861 groups=["confirm_buttons"]]
+layout_mode = 2
+texture_normal = ExtResource("2_73ame")

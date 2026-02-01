@@ -2,12 +2,24 @@ extends Node2D
 
 @export var animal_base: PackedScene
 @export var animal_info_list: Array[AnimalInfo]
+@export var mask_bar_base: PackedScene
 
 var current_animal_index: int = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	spawn_next_animal()
+	reset_masks()
+	signalbus.connect("_reset_masks", reset_masks)
 
+func reset_masks() -> void:
+	var children = get_children()
+	for child in children:
+		if child is MaskBar:
+			remove_child(child)
+			child.queue_free()
+	var fresh_mask_bar = mask_bar_base.instantiate()
+	add_child(fresh_mask_bar)
+		
 func spawn_next_animal() -> void:
 	if current_animal_index >= animal_info_list.size():
 		return

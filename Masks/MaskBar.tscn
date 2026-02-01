@@ -4,8 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://3hlmsvwuucwt" path="res://Masks/Mask.tscn" id="2_c0e0c"]
 [ext_resource type="Script" uid="uid://cjll0tcl1dinq" path="res://Masks/MaskInfo.gd" id="2_mfvce"]
 [ext_resource type="Resource" uid="uid://da2hl5ty1rn32" path="res://Data/Masks/pointy_brown_large.tres" id="3_c0e0c"]
+[ext_resource type="Resource" uid="uid://3at16rhtdglr" path="res://Data/Masks/smooth_blue_small.tres" id="5_c0e0c"]
 
 [node name="MaskBar" type="Node2D" unique_id=1961531635]
 script = ExtResource("1_x042t")
 mask_base = ExtResource("2_c0e0c")
-mask_properties_list = Array[ExtResource("2_mfvce")]([ExtResource("3_c0e0c")])
+mask_properties_list = Array[ExtResource("2_mfvce")]([ExtResource("3_c0e0c"), ExtResource("5_c0e0c")])

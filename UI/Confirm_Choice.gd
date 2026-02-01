@@ -1,14 +1,10 @@
-extends Node
+extends HBoxContainer
 
-var score: int
-var questions_asked: int = 0
-var is_mask_selected: bool
-var current_animal: Node
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
-
+	pass
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	visible = global.is_mask_selected

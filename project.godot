@@ -11,18 +11,23 @@ config_version=5
 [application]
 
 config/name="Animal Masquerade"
-run/main_scene="uid://bvp5x0mrb4ugg"
+run/main_scene="uid://dx1hwjf71ha6q"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 global="*uid://bim1bj8ecm0km"
+signalbus="*uid://buyufvj0uchbv"
 
 [editor]
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[global_group]
+
+confirm_buttons=""
 
 [input]
 

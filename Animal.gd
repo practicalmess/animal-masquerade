@@ -2,9 +2,12 @@ extends Node
 
 @export var info: AnimalInfo
 
+var selected_mask: Node
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	print("Animal instantiated")
+	global.current_animal = self
+	signalbus.connect("_reset_masks", reset_mask)
 
 func setup(data: AnimalInfo) -> void:
 	info = data
@@ -18,9 +21,21 @@ func _process(delta: float) -> void:
 func check_mask(id: int) -> void:
 	if (id == info.correct_mask_id):
 		global.score += 1
-
-func _on_area_2d_body_entered(body: CharacterBody2D) -> void:
-	body.call_deferred("reparent", self)
+		
+func catch_mask(mask) -> void:
+	global.is_mask_selected = true
+	mask.reparent(self)
+	mask.draggable = false
+	mask.is_dragging = false
 	var offset = Vector2(0, -40)
-	body.set_deferred("position", offset)
+	mask.position = offset
+	
+func reset_mask() -> void:
+	#var mask = find_child("CharacterBody2D", true, false).get_parent()
+	var children = get_children()
+	for child in children:
+		if child is MaskNode:
+			child.queue_free()
+	#remove_child(mask)
+	#mask.queue_free()
 	

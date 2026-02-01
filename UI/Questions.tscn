@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ddyl243tohvad"]
+
+[ext_resource type="Script" uid="uid://cys47l60ovfgn" path="res://UI/Questions.gd" id="1_eyi1n"]
+[ext_resource type="Texture2D" uid="uid://f1ecgck6rj2l" path="res://art/ui_box.png" id="2_vujej"]
+
+[node name="Questions" type="VBoxContainer" unique_id=1719548244]
+offset_right = 192.0
+offset_bottom = 132.0
+script = ExtResource("1_eyi1n")
+
+[node name="ColorButton" type="TextureButton" parent="." unique_id=2051137399]
+layout_mode = 2
+texture_normal = ExtResource("2_vujej")
+
+[node name="PossessionButton" type="TextureButton" parent="." unique_id=391698264]
+layout_mode = 2
+texture_normal = ExtResource("2_vujej")
+
+[node name="FunButton" type="TextureButton" parent="." unique_id=122693058]
+layout_mode = 2
+texture_normal = ExtResource("2_vujej")

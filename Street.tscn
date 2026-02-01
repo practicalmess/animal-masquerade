@@ -9,21 +9,18 @@
 [ext_resource type="Script" uid="uid://cjll0tcl1dinq" path="res://Masks/MaskInfo.gd" id="7_ta7yg"]
 [ext_resource type="Resource" uid="uid://da2hl5ty1rn32" path="res://Data/Masks/pointy_brown_large.tres" id="8_anwfe"]
 [ext_resource type="Resource" uid="uid://3at16rhtdglr" path="res://Data/Masks/smooth_blue_small.tres" id="9_wne8h"]
-[ext_resource type="PackedScene" uid="uid://ddyl243tohvad" path="res://Questions.tscn" id="10_anwfe"]
 
 [node name="Street" type="Node2D" unique_id=31064856]
 editor_description = "The main gameplay scene where animals will approach you"
 script = ExtResource("1_7iaks")
 animal_base = ExtResource("2_7iaks")
 animal_info_list = Array[ExtResource("3_dx7jg")]([ExtResource("4_v1iyc")])
+mask_bar_base = ExtResource("6_v1iyc")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=472526760]
 scale = Vector2(1.7937502, 1.7555556)
 texture = ExtResource("1_kpbgp")
 centered = false
-
-[node name="Animal" parent="." unique_id=764415436 instance=ExtResource("2_7iaks")]
-position = Vector2(866, 200)
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=2051852237]
 visible = false
@@ -34,6 +31,5 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="MaskBar" parent="." unique_id=1961531635 instance=ExtResource("6_v1iyc")]
+visible = false
 mask_properties_list = Array[ExtResource("7_ta7yg")]([ExtResource("8_anwfe"), ExtResource("9_wne8h")])
-
-[node name="Questions" parent="." unique_id=548772614 instance=ExtResource("10_anwfe")]
