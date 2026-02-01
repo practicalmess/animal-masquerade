@@ -19,6 +19,17 @@ func play_dialogue() -> void:
 			$LionDialogue.play()
 		"Snake":
 			$SnakeDialogue.play()
+			
+func change_music(state: String) -> void:
+	match state:
+		"Play":
+			$MenuMusic.stop()
+			$GameMusic.play()
+		"End":
+			$GameMusic.stop()
+			$MenuMusic.play()
+	
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

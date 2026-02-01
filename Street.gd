@@ -23,6 +23,7 @@ func reset_masks() -> void:
 		
 func spawn_next_animal() -> void:
 	if global.current_animal_index >= animal_info_list.size():
+		Audio.change_music('End')
 		if global.score == 5:
 			global.game_state = 'win'
 		else:

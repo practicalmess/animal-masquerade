@@ -12,4 +12,5 @@ func _process(delta: float) -> void:
 
 
 func _on_texture_button_pressed() -> void:
+	signalbus.emit_signal("_play_click")
 	global.game_state = 'play'

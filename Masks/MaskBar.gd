@@ -25,4 +25,5 @@ func _process(delta: float) -> void:
 
 
 func _on_help_button_pressed() -> void:
+	$NoteClick.play()
 	global.game_state = 'help'
