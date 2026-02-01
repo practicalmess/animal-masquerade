@@ -11,5 +11,6 @@ possession_answer = "My Ssssamsssssung. Gotta check on my bearcoin hourly."
 fun_answer = "Fun? Life isssssn’t fun, pal. I chassse paper. Money. Gotta get with the timessssss or get left behind."
 intro_dialog = "Hurry up, I gotta check my ssstocksssssss."
 correct_dialog = "Nice. Sssssleek. It workssss."
+incorrect_dialog = "Sssssure, whatever."
 sprite_texture = ExtResource("2_nnl2c")
 metadata/_custom_type_script = "uid://gs6jwbmphuet"

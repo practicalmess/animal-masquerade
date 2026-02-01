@@ -6,6 +6,7 @@
 [resource]
 script = ExtResource("1_nnmlg")
 name = "Bear"
+correct_mask_id = 1
 color_answer = "Purple, like the sky when it’s nice and crisp out."
 possession_answer = "A pristine first edition of the novel *The Shadow Returns!*"
 fun_answer = "Relax by the fire, sip my hot cocoa and read the most recent issue of *Animals Assemble!*"
@@ -13,4 +14,5 @@ intro_dialog = "Will this be quick? I hate standing out in the cold."
 correct_dialog = "It looks just like Nightbear’s!"
 incorrect_dialog = "I can make this work."
 sprite_texture = ExtResource("2_nnmlg")
+mask_pos_y = -40
 metadata/_custom_type_script = "uid://gs6jwbmphuet"

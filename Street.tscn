@@ -15,7 +15,7 @@
 editor_description = "The main gameplay scene where animals will approach you"
 script = ExtResource("1_7iaks")
 animal_base = ExtResource("2_7iaks")
-animal_info_list = Array[ExtResource("3_dx7jg")]([ExtResource("4_v1iyc"), ExtResource("5_anwfe"), ExtResource("6_wne8h"), ExtResource("7_eyqi5"), ExtResource("8_tcpt8")])
+animal_info_list = Array[ExtResource("3_dx7jg")]([ExtResource("7_eyqi5"), ExtResource("8_tcpt8"), ExtResource("6_wne8h"), ExtResource("4_v1iyc"), ExtResource("5_anwfe")])
 mask_bar_base = ExtResource("6_v1iyc")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=472526760]
@@ -26,7 +26,3 @@ centered = false
 
 [node name="MaskBar" parent="." unique_id=1961531635 instance=ExtResource("6_v1iyc")]
 z_index = 2
-offset_left = 541.0
-offset_top = 636.0
-offset_right = 541.0
-offset_bottom = 636.0

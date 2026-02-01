@@ -41,6 +41,8 @@ func show_answer(question: String) -> void:
 			global.current_dialogue = info.fun_answer
 
 func check_mask(id: int) -> bool:
+	print(id)
+	print(info.correct_mask_id)
 	if (id == info.correct_mask_id):
 		global.score += 1
 		print("Current score: ", global.score)
@@ -55,8 +57,8 @@ func catch_mask(mask) -> void:
 	mask.reparent(self)
 	mask.draggable = false
 	mask.is_dragging = false
-	var offset = Vector2(0, -40)
-	mask.position = offset
+	#var offset = Vector2(0, -40)
+	mask.position = Vector2(info.mask_pos_x, info.mask_pos_y)
 	
 func reset_mask() -> void:
 	var children = get_children()

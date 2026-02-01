@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c3on6pt0fholh"]
+
+[ext_resource type="Script" uid="uid://cofunl6g8w16i" path="res://Win.gd" id="1_8sw8u"]
+
+[node name="Win" type="Node2D" unique_id=229963974]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=257673471]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=42054115]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8sw8u")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=680920747]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.72836995, 0.074847035, 0.530757, 1)

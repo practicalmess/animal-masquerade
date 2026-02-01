@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b1ssrk0mgeoo2" path="res://art/icon_guide.png" id="10_2fasq"]
 
 [node name="MaskBar" type="Node2D" unique_id=1961531635]
+z_index = 1
 position = Vector2(219, 540)
 script = ExtResource("1_x042t")
 mask_base = ExtResource("2_c0e0c")

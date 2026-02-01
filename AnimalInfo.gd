@@ -13,8 +13,11 @@ class_name AnimalInfo
 @export var correct_dialog: String
 @export var incorrect_dialog: String
 
+@export var sprite_texture: Texture2D
+@export var mask_pos_x: int
+@export var mask_pos_y: int
+
 # Currently unused
 @export var color_pref: String
 @export var size_pref: String
 @export var shape_pref: String
-@export var sprite_texture: Texture2D

@@ -14,4 +14,5 @@ intro_dialog = "And what course for me, compadre?"
 correct_dialog = "Delicioso! Mwah!"
 incorrect_dialog = "You are the boss, amigo."
 sprite_texture = ExtResource("2_4futj")
+mask_pos_y = -50
 metadata/_custom_type_script = "uid://gs6jwbmphuet"

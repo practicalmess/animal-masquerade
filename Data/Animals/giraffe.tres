@@ -14,4 +14,6 @@ intro_dialog = "What’s hanging, dude?"
 correct_dialog = "Radical!"
 incorrect_dialog = "Whatever floats your boat, duderino."
 sprite_texture = ExtResource("2_yel1w")
+mask_pos_x = -48
+mask_pos_y = -35
 metadata/_custom_type_script = "uid://gs6jwbmphuet"
