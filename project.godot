@@ -13,7 +13,7 @@ config_version=5
 config/name="Animal Masquerade"
 run/main_scene="uid://dx1hwjf71ha6q"
 config/features=PackedStringArray("4.6", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://pm3rgmoal0ex"
 
 [autoload]
 

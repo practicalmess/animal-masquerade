@@ -3,13 +3,14 @@
 [ext_resource type="Script" uid="uid://d1fqp8yq84kmo" path="res://Masks/MaskBar.gd" id="1_x042t"]
 [ext_resource type="PackedScene" uid="uid://3hlmsvwuucwt" path="res://Masks/Mask.tscn" id="2_c0e0c"]
 [ext_resource type="Script" uid="uid://cjll0tcl1dinq" path="res://Masks/MaskInfo.gd" id="2_mfvce"]
-[ext_resource type="Resource" uid="uid://bst6hgvdk6hrm" path="res://Data/Masks/bear_mask.tres" id="4_6cdk0"]
-[ext_resource type="Resource" uid="uid://0jjm16t3cmmq" path="res://Data/Masks/giraffe_mask.tres" id="5_qry2d"]
-[ext_resource type="Resource" uid="uid://bixuqnqkl0n1d" path="res://Data/Masks/lion_mask.tres" id="6_2fasq"]
-[ext_resource type="Resource" uid="uid://bmbwkvj1ewng8" path="res://Data/Masks/mouse_mask.tres" id="7_5leiq"]
-[ext_resource type="Resource" uid="uid://bw2k68aw7p7vm" path="res://Data/Masks/snake_mask.tres" id="8_lt0k0"]
+[ext_resource type="Resource" path="res://Data/Masks/bear_mask.tres" id="4_6cdk0"]
+[ext_resource type="Resource" path="res://Data/Masks/giraffe_mask.tres" id="5_qry2d"]
+[ext_resource type="Resource" path="res://Data/Masks/lion_mask.tres" id="6_2fasq"]
+[ext_resource type="Resource" path="res://Data/Masks/mouse_mask.tres" id="7_5leiq"]
+[ext_resource type="Resource" path="res://Data/Masks/snake_mask.tres" id="8_lt0k0"]
 [ext_resource type="Texture2D" uid="uid://4cf5ymmanspf" path="res://art/desk.png" id="9_qry2d"]
 [ext_resource type="Texture2D" uid="uid://b1ssrk0mgeoo2" path="res://art/icon_guide.png" id="10_2fasq"]
+[ext_resource type="Script" uid="uid://bisftc0prpw2v" path="res://Masks/help_button.gd" id="10_lt0k0"]
 [ext_resource type="AudioStream" uid="uid://c1yai0veplm8c" path="res://audio/Note_Select.wav" id="11_5leiq"]
 
 [node name="MaskBar" type="Node2D" unique_id=1961531635]
@@ -26,6 +27,7 @@ offset_top = -6.0
 offset_right = 899.0
 offset_bottom = 58.0
 texture_normal = ExtResource("10_2fasq")
+script = ExtResource("10_lt0k0")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1065239725]
 offset_left = -223.0
@@ -37,3 +39,6 @@ texture = ExtResource("9_qry2d")
 
 [node name="NoteClick" type="AudioStreamPlayer" parent="." unique_id=780525379]
 stream = ExtResource("11_5leiq")
+
+[connection signal="mouse_entered" from="HelpButton" to="HelpButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="HelpButton" to="HelpButton" method="_on_mouse_exited"]
