@@ -10,6 +10,7 @@ func _ready() -> void:
 	spawn_next_animal()
 	reset_masks()
 	signalbus.connect("_reset_mask_bar", reset_masks)
+	signalbus.connect("_next_animal", spawn_next_animal)
 
 func reset_masks() -> void:
 	var children = get_children()

@@ -5,7 +5,6 @@ extends Node2D
 var selected_mask: Node
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	print("Animal instantiated")
 	global.current_animal = self
 	signalbus.connect("_reset_animal_mask", reset_mask)
 

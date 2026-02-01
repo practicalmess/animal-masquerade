@@ -21,7 +21,9 @@ func _on_button_pressed(button_name) -> void:
 		await get_tree().create_timer(2.0).timeout
 		current_animal.dismiss()
 		await get_tree().create_timer(2.0).timeout
+		global.used_mask_ids.push_back(selection_id)
 		signalbus.emit_signal("_reset_mask_bar")
+		signalbus.emit_signal("_next_animal")
 		global.questions_asked = 0
 		global.selected_mask = null
 	elif button_name == "Reset":

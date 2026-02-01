@@ -7,6 +7,7 @@ var current_animal: Node
 var selected_mask: Node = null
 var current_dialogue: String = ''
 var show_dialogue_box: bool = true
+var used_mask_ids: Array[int]
 
 var dialogue = {
 	"bear": {
