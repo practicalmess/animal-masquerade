@@ -10,7 +10,7 @@ var show_dialogue_box: bool = true
 var used_mask_ids: Array[int]
 
 var dialogue = {
-	"bear": {
+	"Bear": {
 		"Color": "Purple, like the sky when it’s nice and crisp out.",
 		"Possession": "A pristine first edition of the novel *The Shadow Returns!*",
 		"Fun": "Relax by the fire, sip my hot cocoa and read the most recent issue of *Animals Assemble!*",
